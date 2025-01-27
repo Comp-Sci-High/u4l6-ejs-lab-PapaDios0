@@ -84,7 +84,9 @@ app.get("/", (req, res) => {
 
 // Task 3: Set up the route handler for /mens which sends back category.ejs with the men's array
 
-
+app.get('/mens', (req, res) => {
+  res.render('category.ejs', inventory[0])
+})
 
 // Task 4: Plug in the values in category.ejs to get the page working
 // PINK ONLY: Set up a route handler for /womens to pass in similar data for women's
