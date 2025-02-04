@@ -25,14 +25,14 @@
       <!-- Modify the following to make one item card for each element of the items array -->
 
       <!-- You should use the values from data to dynamically populate the image, item name, cost, and path -->
-      
+      <% for(let x = 0; x < items.length; x++){%>
       <div class="item-card">
         <img src= <%= items[0].imageUrl %> />
         <h3><%= items[0].name %> </h3>
         <p<%= items[0].price %>p>
         <a href= <%= items[0].path %>>More info</a>
       </div>
-
+<% } %>
     </div>
   </body>
 </html>
